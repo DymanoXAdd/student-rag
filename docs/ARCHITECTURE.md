@@ -74,8 +74,8 @@ Draft, to be finalized in the data-generator task. All data is synthetic.
 - `reading_assessments` (student_id, term, score, lexile, benchmark_level)
 - `teacher_notes` (note_id, student_id, course_id, date, text), which is embedded into Chroma
 
-Planted patterns (ground truth for the eval) are listed in the generator's docstring
-and in `eval/`.
+Planted patterns P1–P5 (ground truth for the eval) are specified in
+`docs/learning/01-synthetic-data.md`. Race and gender get no planted effect on purpose.
 
 ## External services and API contracts
 | Service | Used for | Failure plan |
@@ -86,7 +86,8 @@ and in `eval/`.
 ## Non-functional targets
 - Performance: p50 under 10 s per question on the RX 9070 XT
 - Availability: not applicable (local)
-- Scale: about 2k students, 20k grade rows, 100k attendance rows
+- Scale: about 2k students (grades 6–8, one school year of 180 days), about 20k grade
+  rows, about 360k daily attendance rows
 
 ## Constraints and known risks
 - Ollama GPU on the RX 9070 XT is verified (2026-11-13). `qwen2.5:7b` runs 100% on GPU

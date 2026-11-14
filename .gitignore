@@ -4,8 +4,8 @@
 secrets/
 CLAUDE.local.md
 .claude/settings.local.json
-graphify-out/cache/
-graphify-out/graph.html
+# Graph is rebuilt locally by the git hooks; tracking it dirties every branch switch
+graphify-out/
 .obsidian/
 *.graphify-bak
 

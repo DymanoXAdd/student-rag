@@ -21,7 +21,7 @@ flowchart LR
 
 | # | Concept | Task | Status |
 |---|---|---|---|
-| 01 | [[01-synthetic-data]] | T-006 | not started |
+| 01 | [[01-synthetic-data]] | T-006 | in progress |
 | 02 | [[02-schema-as-context]] | T-007 | not started |
 | 03 | [[03-chunking-and-embeddings]] | T-008 | not started |
 | 04 | [[04-retrieval-and-grounding]] | T-009 | not started |
