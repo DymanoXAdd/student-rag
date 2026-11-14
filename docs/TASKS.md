@@ -7,12 +7,10 @@ Stage: building · Updated: 2026-11-13 · Milestone: v1 by about 2026-12-13
      Luis writes the code for every task; Claude teaches, writes the note, and reviews. -->
 
 ## Now
-- [ ] T-002 Create the GitHub repo, push the scaffold, and add an MIT LICENSE
+- [ ] T-004 `uv init` the package (`src/student_rag/`), add deps (needs approval), pin versions in ARCHITECTURE.md
 
 ## Next
 Setup
-- [ ] T-003 Install Ollama; check GPU acceleration on the RX 9070 XT (ROCm or Vulkan); pull a 7B and a 14B model and time them
-- [ ] T-004 `uv init` the package (`src/student_rag/`), add deps (needs approval), pin versions in ARCHITECTURE.md
 - [ ] T-005 CI: GitHub Actions running ruff, pytest, and gitleaks; Dependabot weekly; check that no co-author trailers are added
 
 Milestone 1 — data (week 1)
@@ -45,4 +43,6 @@ Milestone 4 — eval (week 4)
 
 ## Done
 <!-- Keep the last 10. Move older lines to docs/archive/TASKS-<year>.md. -->
+- [x] T-003 Ollama on the RX 9070 XT is 100% GPU: qwen2.5:7b about 103 tok/s, qwen2.5-coder:14b about 56 tok/s (2026-11-13)
+- [x] T-002 Public repo https://github.com/DymanoXAdd/student-rag created; scaffold, LICENSE, and README pushed (2026-11-13)
 - [x] T-001 Luis approved the brief, architecture, and D-001 (2026-11-13)

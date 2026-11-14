@@ -76,8 +76,14 @@ and in `eval/`.
 - Scale: about 2k students, 20k grade rows, 100k attendance rows
 
 ## Constraints and known risks
-- Ollama GPU support for AMD RX 9070 XT (RDNA4) on Windows must be verified (T-003). The
-  fallbacks are the Vulkan backend or CPU, which are slower.
+- Ollama GPU on the RX 9070 XT is verified (2026-11-13). `qwen2.5:7b` runs 100% on GPU
+  (llamacpp runner, 4.8 GB, 4096 context): about 103 tok/s generation and about
+  800 tok/s prompt processing. A 300-token answer takes about 3 s, well inside the
+  10 s budget. `qwen2.5-coder:14b` gets about 56 tok/s generation and about 446 tok/s
+  prompt (`ollama ps` not captured, but that speed means GPU).
+- Model split: `qwen2.5-coder:14b` for text-to-SQL (where accuracy matters) and
+  `qwen2.5:7b` for routing and writing answers (where speed matters). Both together
+  use about 14 GB, which fits in 16 GB VRAM. Revisit with eval results in T-013.
 - Text-to-SQL accuracy from local models is the weakest link. A good data dictionary
   and few-shot examples matter more than model size.
 - sentence-transformers pulls in PyTorch (CPU build, about 1 GB). Ollama's
