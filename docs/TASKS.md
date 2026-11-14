@@ -8,6 +8,13 @@ Stage: building · Updated: 2026-11-13 · Milestone: v1 by about 2026-12-13
 
 ## Now
 - [ ] T-006 Seeded synthetic data generator into DuckDB, with planted patterns P1–P5, plus tests (Luis writing; note 01 written)
+  - Branch `task/T-006-synthetic-data`. Paused 2026-11-14.
+  - [x] `make_students` (returns dict of arrays + hidden engagement); 2 reproducibility tests pass
+  - [x] CI bypass for "no tests" removed; ldap3 warnings filtered in pyproject
+  - [ ] **Resume here:** fix 2 lint errors (`uv run ruff check . --fix`: unused pandas import in generate.py, import order in the test), confirm `ruff check .` and `pytest` are clean
+  - [ ] `make_courses()`: fixed list, 5 subjects × grades 6–8, grade-8 math = "Algebra I" (P3)
+  - [ ] `make_enrollments`, `make_attendance`, `make_reading`, `make_discipline`, `write_db`, `main`
+  - [ ] Tests 2–5 from note 01 (integrity, ranges, planted patterns, no race/gender effect)
 
 ## Next
 
