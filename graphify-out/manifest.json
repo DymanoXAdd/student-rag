@@ -1,0 +1,86 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1794625372.0067942,
+    "seen": 1794629582.4085274,
+    "ast_hash": "83cfdfef8b86465d35d1016c2d1f485b",
+    "semantic_hash": ""
+  },
+  ".claude/rules/database.md": {
+    "mtime": 1794625363.1875074,
+    "seen": 1794629582.4085321,
+    "ast_hash": "a04e234888bf11f8e99a5b572022e2d2",
+    "semantic_hash": ""
+  },
+  ".claude/rules/security.md": {
+    "mtime": 1794625362.9715014,
+    "seen": 1794629582.4085345,
+    "ast_hash": "d85012bb9aa0e37180aac31b153d9dd9",
+    "semantic_hash": ""
+  },
+  ".claude/rules/testing.md": {
+    "mtime": 1794625363.0816383,
+    "seen": 1794629582.4085352,
+    "ast_hash": "a05bb79f0338c932b6805b398b639f68",
+    "semantic_hash": ""
+  },
+  ".github/pull_request_template.md": {
+    "mtime": 1794625363.4069088,
+    "seen": 1794629582.4085364,
+    "ast_hash": "44b068660f718466a733a1aace31dd2d",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1794625667.6496327,
+    "seen": 1794629582.408537,
+    "ast_hash": "1415ba37f9601a504f1b9c28031dcf11",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794625796.733761,
+    "seen": 1794629582.4085376,
+    "ast_hash": "a59cb13cb44d0a70ac48ef8bb0f41086",
+    "semantic_hash": ""
+  },
+  "docs/ARCHITECTURE.md": {
+    "mtime": 1794629580.0298731,
+    "seen": 1794629582.4085386,
+    "ast_hash": "e03b872cfe9f9f2deed7a8eb3827e6e6",
+    "semantic_hash": ""
+  },
+  "docs/BRIEF.md": {
+    "mtime": 1794625278.28229,
+    "seen": 1794629582.4085393,
+    "ast_hash": "7255992a287c3237c0204095889e5776",
+    "semantic_hash": ""
+  },
+  "docs/DECISIONS.md": {
+    "mtime": 1794625667.4546902,
+    "seen": 1794629582.40854,
+    "ast_hash": "d9ba9e1d4c2b4b5d25f02f349cf799a5",
+    "semantic_hash": ""
+  },
+  "docs/RUNBOOK.md": {
+    "mtime": 1794625362.6042702,
+    "seen": 1794629582.4085407,
+    "ast_hash": "ac8840ee5824582990be70756182997d",
+    "semantic_hash": ""
+  },
+  "docs/TASKS.md": {
+    "mtime": 1794629580.1658864,
+    "seen": 1794629582.4085414,
+    "ast_hash": "3217f25418b3747c97dc29863ecaab3c",
+    "semantic_hash": ""
+  },
+  "docs/learning/README.md": {
+    "mtime": 1794625667.8352358,
+    "seen": 1794629582.4085422,
+    "ast_hash": "0e8a88701349beaeb50528b4029d3082",
+    "semantic_hash": ""
+  },
+  "docs/learning/_template.md": {
+    "mtime": 1794625667.6857364,
+    "seen": 1794629582.4085429,
+    "ast_hash": "f2871850eb35f153acac973c6f16ce24",
+    "semantic_hash": ""
+  }
+}

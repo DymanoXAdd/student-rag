@@ -27,7 +27,20 @@ Versions are pinned by `uv lock` at setup; the table below is filled then.
 
 | Package | Version |
 |---|---|
-| (filled in at T-004) | |
+| Python | 3.12 |
+| duckdb | 2.0.0 |
+| numpy | 2.5.4 |
+| chromadb | 1.5.9 |
+| sentence-transformers | 6.3.0 |
+| ollama (client) | 0.6.3 |
+| arize-phoenix | 21.0.0 |
+| arize-phoenix-otel | 0.17.3 |
+| pytest (dev) | 9.2.0 |
+| ruff (dev) | 0.17.5 |
+| jupyterlab (dev) | 4.6.6 |
+
+Look up current docs for these versions rather than relying on memory; chromadb 1.x,
+duckdb 2.x, and sentence-transformers 6.x all changed APIs from older tutorials.
 
 ## Components and boundaries
 1. **Data generator** (`src/student_rag/data/`): a seeded script that builds the
