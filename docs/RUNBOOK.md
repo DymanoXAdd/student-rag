@@ -19,6 +19,13 @@ Not applicable. To undo, check out the previous commit and regenerate the data.
   notebooks; traces are kept locally (git-ignored).
 - Uptime and alerts: not applicable
 
+## CI and Dependabot
+- `.github/workflows/ci.yml` runs on every PR and every push to `main`: `ruff check`,
+  `pytest`, and gitleaks (full history)
+- Dependabot opens PRs weekly: one grouped PR for Python deps and one per GitHub Action
+- **Merging Dependabot PRs:** use squash merge and delete any `Co-authored-by:` line in
+  the commit message box before confirming (no bot attribution in history)
+
 ## Database
 - Rebuild from scratch: run the data generator (command filled in at T-006). It's
   seeded, so the output is identical every run.
