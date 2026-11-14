@@ -18,8 +18,7 @@ jobs:
           enable-cache: true
       - run: uv sync --locked
       - run: uv run ruff check .
-      # pytest exits 5 when no tests exist yet; shortcut: drop the "|| test $? -eq 5" once T-006 adds the first test
-      - run: uv run pytest || test $? -eq 5
+      - run: uv run pytest
 
   gitleaks:
     runs-on: ubuntu-latest

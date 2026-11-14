@@ -24,6 +24,10 @@ student-rag = "student_rag:main"
 requires = ["uv_build>=0.11.2,<0.12.0"]
 build-backend = "uv_build"
 
+[tool.pytest.ini_options]
+# ldap3 (pulled in by arize-phoenix) uses deprecated pyasn1 names; not our code
+filterwarnings = ["ignore::DeprecationWarning:ldap3.*"]
+
 [dependency-groups]
 dev = [
     "jupyterlab>=4.6.6",
